@@ -51,6 +51,8 @@
 .container li .details ul li{
     font-size: 0.75rem;
     height: 0.75rem;
+    width: 2.5rem;
     margin: 0.4rem ;
     padding: 0.4rem 0.6rem;
+    text-align: center;
 }
