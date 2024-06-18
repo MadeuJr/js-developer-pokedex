@@ -1,0 +1,27 @@
+.container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 75%;
+}
+
+.container h2{
+    margin: 1rem;
+}
+
+.container ol {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container li {
+    margin: 1rem;
+    border: 1px solid black;
+    height: 5rem;
+    border-radius: 1rem;
+    list-style: none;
+    margin: .5rem;
+    padding: 2rem 1rem;
+}
