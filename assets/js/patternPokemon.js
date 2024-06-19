@@ -1,8 +1,10 @@
-const pokemonDisplay = document.getElementById('pokemons');
+const PatternPokemon = {}
 
-function createPokemonElement(pokemon) {
-    return `
-            <li class="${pokemon.type}">
+PatternPokemon.addPokemon = (pokemonList) => {
+    const pokemons = [] ;
+    pokemonList.forEach((pokemon => {
+        const pokemonHTML = `
+            <li class="${pokemon.type[0]}">
                 <div class="info">
                     <span class="name">
                         ${pokemon.name}
@@ -13,19 +15,14 @@ function createPokemonElement(pokemon) {
                 </div>
                 <div class="details">
                     <ul class="types">
-                        ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                        <li class="${pokemon.types[0]}">${pokemon.types[0]}</li>
+                        <li class="${pokemon.types[1]}">${pokemon.types[1]}</li>
                     </ul>
                     <img src="${pokemon.imageSource}" alt="Pokemon ${pokemon.name}">  
                 </div>
             </li>
-            `;
+            `
+        pokemons.push(pokemonHTML);
+        }));
+    return pokemons;   
 }
-
-function loadPokemonItens() {
-    PokeAPI.getPokemons(0, 15).then((pokemons = []) => {
-        const newHtml = pokemons.map(createPokemonElement).join('')
-        pokemonDisplay.innerHTML += newHtml
-    })
-}
-
-loadPokemonItens()
