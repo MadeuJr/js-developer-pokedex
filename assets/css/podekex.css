@@ -67,3 +67,26 @@
     border: none;
     filter: brightness(1.2);
 }
+
+.loadcontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadbutton{
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color:  #ba0f6f;
+    color: rgb(230, 227, 227);
+}
+
+.loadbutton:hover{
+    background-color: #8f0a4f;
+    transform: scale(1.05);
+    transition: all 0.1s ease 0s;
+    cursor: pointer;
+}

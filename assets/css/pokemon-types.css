@@ -16,8 +16,8 @@
 .poison{
     background-color: #a819d7;
 }
-.eletric{
-    background-color: #fffa24;
+.electric{  
+    background-color: #f3d23b;
 }
 .fighting{
     background-color: #e81319;
@@ -45,4 +45,10 @@
 }
 .flying{
     background-color: #5eb9b2;
+}
+.ground{
+    background-color: #d59567;
+}
+.psychic{
+    background-color: #f97176;
 }
